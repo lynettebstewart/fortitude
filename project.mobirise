@@ -8,7 +8,7 @@
       "styling": {
         "primaryColor": "#ffffff",
         "secondaryColor": "#ffffff",
-        "successColor": "#ffffff",
+        "successColor": "#767676",
         "infoColor": "#ffffff",
         "warningColor": "#1f4838",
         "dangerColor": "#55b4d4",
