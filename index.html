@@ -81,7 +81,7 @@
     <!-- End Google Tag Manager (noscript) -->
    
     <!-- Loading Animation -->
-    <div class="loading">
+    <div id="preloader" class="loading">
         <div class="loading-text">
             <span class="loading-text-words">L</span>
             <span class="loading-text-words">O</span>
@@ -92,7 +92,20 @@
             <span class="loading-text-words">G</span>
         </div>
     </div>
-    <!-- End Loading Animation -->
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+    jQuery(document).ready(function ($) {
+        $(window).load(function () {
+            setTimeout(function () {
+                $('#preloader').fadeOut('slow', window.onload = function () {
+                });
+            }, 3000);
+        });
+    });
+</script>
+<!-- End Loading Animation -->
+
 
   <section class="menu cid-qTkzRZLJNu" once="menu" id="menu1-0">
 
@@ -319,8 +332,6 @@
     </div>
 </section>
 
-
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
